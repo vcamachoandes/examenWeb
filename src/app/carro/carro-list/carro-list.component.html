@@ -1,0 +1,45 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<div>
+
+<div class="wrapper">
+  <h2>TuSegundazo.com</h2>
+  <hr>
+  <div class="bg">
+  </div>
+  <hr>
+  
+  
+  <div class="my-5 d-flex">
+    <div class="w-50">
+      <table class="align-middle text-center w-100">
+        <thead>
+          <tr class="bg-dark text-light">
+            <th scope="col" style="padding: 8px;">#</th>
+            <th scope="col" style="padding: 8px;">Marca</th>
+            <th scope="col" style="padding: 8px;">Línea</th>
+            <th scope="col" style="padding: 8px;">Modelo</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let carro of carros; let i = index">
+          <tr>
+            <th scope="row" style="padding: 8px;">{{ i + 1 }}</th>
+            <td style="padding: 8px;">{{ carro.marca }}</td>
+            <td style="padding: 8px;">{{ carro.linea }}</td>
+            <td style="padding: 8px;">{{ carro.modelo }}</td>
+          </tr>
+          <hr style="margin: 2%; width: 1000%; opacity: 15%;">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="mt-4">
+    <ul>
+      <li *ngFor="let marca of getMarcaKeys()">
+        Total {{ marca }}: {{ marcaCount[marca] }}
+      </li>
+    </ul>
+  </div>
+  <footer class="text-center mt-4">
+    <p>Contact us: +57 3102105253 - info&#64;tusegundazo.com - &#64;tusegundazo</p>
+  </footer>
+</div>

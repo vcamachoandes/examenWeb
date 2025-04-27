@@ -1,0 +1,23 @@
+.wrapper{
+    padding: 2% 5%;
+}
+
+.bg{
+    background-image: url(../../assets/images/fondoCarro.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+    height: 300px;
+    width: 100%;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+li{
+    list-style: none;
+}
